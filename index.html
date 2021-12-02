@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Match Game</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./scripts.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="main-title">Christmas Match-Up</h1>
+        <div class="game-info">
+            <h3>Time: <span data-time-remaining></span></h3>
+            <h3>Flips: <span data-flip-count></span></h3>
+        </div>
+        <div class="game-container" data-game-container></div>
+    </div>
+    <div class="overlay show" data-start-overlay>
+        <h3 class="small">Click to Start Game >></h3>
+    </div>
+    <div class="overlay" data-win-overlay>
+        <h1>You Win!</h1>
+        <h3 class="small">Click to Play Again >></h3>
+    </div>
+    <div class="overlay" data-game-over-overlay>
+        <h1>Game Over</h1>
+        <h3 class="small">Click to Play Again >></h3>
+    </div>
+
+    <!--Template for Game Cards-->
+    <template data-card-template>
+        <div class="card">
+            <div class="card-face card-back">
+                <img src="./assets/images/snowflake.png" alt="" class="snowflake snowflake-top-left">
+                <img src="./assets/images/snowflake.png" alt="" class="snowflake snowflake-top-right">
+                <img src="./assets/images/snowflake.png" alt="" class="snowflake snowflake-bottom-right">
+                <img src="./assets/images/snowflake.png" alt="" class="snowflake snowflake-bottom-left">
+                <img src="./assets/images/xmas-tree.png" alt="" class="xmas-tree">
+            </div>
+            <div class="card-face card-front">
+                <img src="./assets/images/snowflake-blue.png" alt="" class="snowflake snowflake-top-left">
+                <img src="./assets/images/snowflake-blue.png" alt="" class="snowflake snowflake-top-right">
+                <img src="./assets/images/snowflake-blue.png" alt="" class="snowflake snowflake-bottom-right">
+                <img src="./assets/images/snowflake-blue.png" alt="" class="snowflake snowflake-bottom-left">
+                <img src="./assets/images/snowman.png" alt="" class="card-value" data-card-value>
+            </div>
+        </div>
+    </template>
+</body>
+</html>
