@@ -73,7 +73,7 @@ class MatchGame {
         this.busy = true;
         timer.innerText = this.timeRemaining;
         flipCounter.innerText = this.flipCount;
-        cards.forEach(card => card.classList.remove('show', 'matched'))
+        cards.forEach(card => card.classList.remove('show', 'matched'));
         this.shuffleCards();
     }
 
